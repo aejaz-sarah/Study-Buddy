@@ -1,0 +1,19 @@
+Computer Networks: Transport Layer
+
+The Transport Layer is the fourth layer of the OSI model. Its primary responsibility is to provide end-to-end communication services for applications. It ensures the reliable arrival of messages and provides error-checking mechanisms and data flow controls.
+
+Key Protocols:
+1. Transmission Control Protocol (TCP):
+- Connection-oriented protocol.
+- Ensures reliable, ordered, and error-checked delivery of a stream of octets.
+- Uses a three-way handshake (SYN, SYN-ACK, ACK) to establish a connection.
+- Implements congestion control and flow control (sliding window).
+
+2. User Datagram Protocol (UDP):
+- Connectionless protocol.
+- Provides a simpler, message-based service without reliability guarantees.
+- Faster than TCP because it lacks error recovery and flow control overhead.
+- Suitable for real-time applications like video streaming and online gaming where speed is preferred over reliability.
+
+Multiplexing and Demultiplexing:
+The transport layer uses ports to identify specific applications or processes running on a host. This allows multiple applications on the same device to share a single network connection simultaneously. Well-known ports include 80 for HTTP, 443 for HTTPS, and 53 for DNS.
